@@ -6,8 +6,8 @@ SELECT *
 FROM (
   SELECT
     channelGrouping AS channel,
-    FORMAT("%'d", SUM(totals.visits)) AS total_sessions,
-    CONCAT('$', FORMAT("%'.2f", ROUND(SUM(totals.transactionRevenue / 1000000), 2))) AS total_revenue,
+    SUM(totals.visits) AS total_sessions,
+    ROUND(IFNULL(SUM(totals.transactionRevenue / 1000000), 0), 2) AS total_revenue,
     ROUND(
       SUM(totals.transactionRevenue / 1000000) /
       SUM(SUM(totals.transactionRevenue / 1000000)) OVER() * 100
