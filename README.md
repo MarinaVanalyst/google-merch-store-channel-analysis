@@ -6,11 +6,11 @@ A SQL and dashboard project analysing which marketing channels drive revenue, wh
 
 ---
 
-## Business Context
+## Business context
 
 The marketing director at the Google Merchandise Store is heading into a quarterly budget review and needs to justify where spend is going. They do not know which channels are genuinely driving revenue versus which are simply driving traffic. This analysis was produced to inform that budget allocation decision.
 
-## Business Problem Statement
+## Business problem statement
 
 The Google Merchandise Store is spending across multiple marketing channels. This analysis identifies which channels drive revenue, which drive traffic only, and recommends where budget should be focused for maximum return.
 
@@ -21,7 +21,7 @@ The Google Merchandise Store is spending across multiple marketing channels. Thi
 **Date range:** August 2016 – August 2017 (August 2017 incomplete)
 **Volume:** ~900,000 sessions across 8 marketing channels
 
-## Note on Project Context
+## Note on project context
 
 This project uses a public Google Analytics sample dataset. The business context, problem statement, and stakeholder framing were created by me to 
 simulate a real-world scenario, in order to demonstrate an end-to-end analytical workflow from business question through to recommendation.
@@ -30,7 +30,7 @@ simulate a real-world scenario, in order to demonstrate an end-to-end analytical
 
 Based on prior experience in B2B marketing, referral channels tend to convert well for lower-authority brands due to third-party trust signals. However, given the Google Merchandise Store's high brand recognition, organic search was expected to be the top-performing channel by both revenue and conversion rate, as users arrive with high purchase intent. Paid search was expected to underperform relative to its traffic volume. Direct traffic was expected to perform strongly as a secondary channel, driven by returning customers with existing brand familiarity.
 
-## Business Questions
+## Business questions
 
 | # | Question | What it tells us |
 |---|---|---|
@@ -48,14 +48,14 @@ Based on prior experience in B2B marketing, referral channels tend to convert we
 4. Compared findings against the original hypothesis
 5. Documented findings and recommendations in [insights.md](./insights.md)
 
-## Data Cleaning Notes
+## Data cleaning notes
 
 - **Revenue format:** `totalTransactionRevenue` is stored in micros and divided by 1,000,000 throughout to convert to dollars
 - **Null revenue:** Sessions without a transaction return null revenue; handled using `IFNULL` where totals are calculated
 - **Incomplete month:** August 2017 contains partial data only, as the dataset ends mid-month, and is excluded from trend conclusions
 - **Unclassified traffic:** The `(Other)` channel grouping is excluded from recommendations due to negligible volume
 
-## Key Findings Summary
+## Key findings summary
 
 | Channel | Traffic Rank | Revenue Rank | Conversion Rank | Key Insight |
 |---|---|---|---|---|
@@ -72,10 +72,10 @@ Based on prior experience in B2B marketing, referral channels tend to convert we
 
 The hypothesis predicted Organic Search would lead on both revenue and conversion rate due to the brand's high authority. The data shows Referral led on both, ranking 1st for revenue and 1st for conversion rate, while Organic Search ranked 3rd and 5th respectively. This suggests that even for high-authority brands, third-party trust signals from referral sources remain a stronger driver of purchase intent than direct brand search. The prediction for Paid Search underperforming relative to volume was correct, though it converts more efficiently than its traffic share would suggest. Direct performed strongly as predicted, ranking 2nd for revenue.
 
-## Detailed Findings & Recommendations
+## Detailed findings & recommendations
 
 See [insights.md](./insights.md) for the full write-up of all six findings, including specific recommendations for budget reallocation, channel measurement, and SEO strategy.
 
-## Tools Used
+## Tools used
 
 BigQuery (SQL), Looker Studio (dashboard and visualisation)
