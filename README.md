@@ -47,7 +47,7 @@ Based on prior experience in B2B marketing, referral channels tend to convert we
 ## Process
 
 1. Explored the dataset structure and identified data quality considerations (see below)
-2. Wrote eight SQL queries in BigQuery, one per business question, plus three more for the dashboard and for checks (see the [queries](./queries) folder)
+2. Wrote five SQL queries in BigQuery, one per business question, plus three more for the dashboard and for checks (see the [queries](./queries) folder)
 3. Built an interactive Looker Studio dashboard connected directly to BigQuery
 4. Compared findings against the original hypothesis
 5. Documented findings and recommendations in [insights.md](./insights.md)
