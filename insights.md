@@ -28,7 +28,7 @@ This suggests Social is currently being measured against the wrong goal.
 
 Display has the second lowest traffic of all channels (6,262 sessions) but ranks 4th for revenue ($78,337.46) and 2nd for conversion rate (2.28%) - the second highest of any channel.
 
-This pattern suggests Display ads are highly targeted toward users with strong purchase intent, converting at nearly double the rate of Organic Search despite receiving a fraction of the traffic.
+This pattern suggests Display ads are highly targeted toward users with strong purchase intent, converting at more than double the rate of Organic Search (2.28% compared to 0.90%) despite receiving a fraction of the traffic.
 
 **Recommendation:** Increase Display budget incrementally and monitor conversion rate and revenue over the following months to validate whether the efficiency holds at greater scale. Even a modest increase in Display investment could yield disproportionate revenue gains given its current conversion performance.
 
@@ -36,7 +36,7 @@ This pattern suggests Display ads are highly targeted toward users with strong p
 
 ## Finding 4: Paid Search shows the same pattern as Display
 
-Paid Search ranks 6th for traffic but 3rd for conversion rate (1.85%), confirming the same pattern seen with Display - intent-driven channels consistently outperform high-volume channels on efficiency.
+Paid Search ranks 5th for traffic but 3rd for conversion rate (1.85%), confirming the same pattern seen with Display - intent-driven channels consistently outperform high-volume channels on efficiency.
 
 Despite this, Paid Search receives limited investment relative to its conversion potential.
 
